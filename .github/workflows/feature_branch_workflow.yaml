@@ -1,6 +1,6 @@
 name: Feature Branch Build
 
-run-name: 'Test & Build Feature Branch: ${{github.head_ref}}'
+run-name: 'Test & Build Feature Branch: ${{github.ref_name}}'
 
 on:
   push:
