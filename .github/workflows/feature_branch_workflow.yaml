@@ -1,0 +1,25 @@
+name: Feature Branch Build
+
+run-name: 'Test & Build Feature Branch: ${{github.ref_name}}'
+
+on:
+  push:
+    branches:
+      - '*feature/*'
+
+jobs:
+    test:
+        name: Test Feature Branch
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout Code Repository
+            uses: actions/checkout@v4
+          - name: Print Filler
+            run: echo "Will flesh this out later"
+        #   - name: Use Node.js
+        #     uses: actions/setup-node@v3
+        #     with:
+        #       node-version: '20.x'
+        #   - run: npm ci
+        #   - run: npm run build --if-present
+          # - run: npm test
