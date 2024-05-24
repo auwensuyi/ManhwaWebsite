@@ -9,7 +9,7 @@ body {
 
 
 /* Set a style for the submit/register button */
-.loginbtn {
+.registerbtn {
 
  background-color: #04AA6D;
  color: white;
@@ -21,11 +21,17 @@ body {
  opacity: 0.9;
 }
 
-.loginbtn:hover {
+.registerbtn:hover {
  opacity: 1;
 }
 
 /* Add a blue text color to links */
 a {
  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+ background-color: #fcfcfc;
+ text-align: center;
 }
