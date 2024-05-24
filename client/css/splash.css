@@ -1,0 +1,22 @@
+body {
+ background: rgb(245, 247, 247);
+ height: 100%;
+
+
+}
+
+.splash {
+ background-color: rgb(246, 246, 246);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+}
+
+.design {
+ height: auto;
+}
+
+h3 {
+ text-align: center;
+}
