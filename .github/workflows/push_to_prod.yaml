@@ -28,5 +28,5 @@ jobs:
       - run: |
           touch .env
           echo "${{secrets.ENV_FILE}}" > .env
-      # - run: sudo cp -r template/styles /var/www/static
-      # - run: pm2 restart manwhadev
+      - run: sudo cp -r template/styles /var/www/static
+      - run: pm2 restart manga-services
