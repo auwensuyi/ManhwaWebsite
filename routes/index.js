@@ -6,9 +6,7 @@ const router = express.Router();
 // User Login Endpoint
 router.post(`/login`, async (req, res) => {
     console.log(req.body);
-    return res.redirect('https://www.youtube.com/watch?v=MB5gKerbnLE');
-    //res.send(req.body.name);
-    
+    return res.status(200).send(`Login Worked! Hello there ${req.body.username}`); 
 })
 
 // User Registration Endpoint
