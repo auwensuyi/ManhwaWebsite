@@ -1,7 +1,7 @@
 var path = require('path');
 //require('dotenv').config();
 const express = require('express')
-//const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 const app = express();
 const bodyparser = require('body-parser')
 
@@ -15,23 +15,23 @@ app.use(bodyparser.urlencoded({extended: true}))
 
 
 const PORT_NUMBER =  process.env.PORT || 8085;
-//const MONGO_URL =  process.env.MONGO_URL || 'mongodb://localhost/videogame';
+const MONGO_URL =  process.env.MONGO_URL || 'mongodb://localhost/manhwa';
 
 
-//#region ********** DATABASE RESOURCES **********/
-// mongoose.set("strictQuery", false);
+// #region ********** DATABASE RESOURCES **********/
+mongoose.set("strictQuery", false);
 
-//  mongoose.connect(MONGO_URL, {
-//     useNewUrlParser: true
-// });
+mongoose.connect(MONGO_URL, {
+     useNewUrlParser: true
+ });
 
-// const db = mongoose.connection;
+ const db = mongoose.connection;
 
-// //This is in the case of an error with the connection
-// db.on('error', err => console.log(err));
+// This is in the case of an error with the connection
+ db.on('error', err => console.log(err));
 
-// //This is to run once we have connected to the database
-// db.once('open', () => console.log('Connected To The Database'));
+// This is to run once we have connected to the database
+ db.once('open', () => console.log('Connected To The Database'));
 
 //#endregion
 
