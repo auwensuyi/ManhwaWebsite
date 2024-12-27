@@ -31,4 +31,4 @@ jobs:
                 git pull -p
                 git add .
                 git commit -m "${{ inputs.commit_message || 'Commiting Date Change'}}"
-                git push
+                git push --force
