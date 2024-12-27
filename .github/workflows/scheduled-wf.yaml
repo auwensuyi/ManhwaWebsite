@@ -24,7 +24,7 @@ jobs:
             - name: Setup Git User
               run: |
                   git config user.name "${{ github.repository_owner }}"
-                  git config user.email "omoruyiomofonmwan@yahoo.com"
+                  git config user.email "auwensuyi1@outlook.com"
 
             - name: Commit Code
               run: |
